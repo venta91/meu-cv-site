@@ -4,6 +4,13 @@ import React, { useState, useEffect } from 'react';
 import { Linkedin, Twitter, Download } from 'lucide-react';
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
+import {
+  UserIcon,
+  BriefcaseIcon,
+  CodeBracketIcon,
+  SparklesIcon,
+  EnvelopeIcon
+} from '@heroicons/react/24/outline';
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -25,11 +32,11 @@ const Header = () => {
   };
 
   const navItems = [
-    { id: 'about', label: 'About' },
-    { id: 'experience', label: 'Experience' },
-    { id: 'projects', label: 'Projects' },
-    { id: 'skills', label: 'Skills' },
-    { id: 'contact', label: 'Contact' },
+    { id: 'about', label: 'Sobre', icon: UserIcon },
+    { id: 'experience', label: 'Experiência', icon: BriefcaseIcon },
+    { id: 'projects', label: 'Projetos', icon: CodeBracketIcon },
+    { id: 'skills', label: 'Habilidades', icon: SparklesIcon },
+    { id: 'contact', label: 'Contato', icon: EnvelopeIcon },
   ];
 
   return (
@@ -48,17 +55,22 @@ const Header = () => {
             >
               JV
             </button>
-            <ul className="flex gap-8">
-              {navItems.map((item) => (
-                <li key={item.id}>
-                  <button
-                    onClick={() => scrollToSection(item.id)}
-                    className="text-gray-600 hover:text-quintoandar-blue transition-colors font-medium"
-                  >
-                    {item.label}
-                  </button>
-                </li>
-              ))}
+            <ul className="flex gap-4 md:gap-8">
+              {navItems.map((item) => {
+                const Icon = item.icon;
+                return (
+                  <li key={item.id}>
+                    <button
+                      onClick={() => scrollToSection(item.id)}
+                      className="flex flex-col items-center text-xs text-gray-600 hover:text-quintoandar-blue transition-colors font-medium"
+                      aria-label={item.label}
+                    >
+                      <Icon className="h-5 w-5 md:hidden" aria-hidden="true" />
+                      <span className="hidden md:inline">{item.label}</span>
+                    </button>
+                  </li>
+                );
+              })}
             </ul>
           </div>
         </div>
@@ -110,6 +122,7 @@ const Header = () => {
                 "bg-white border border-gray-200 hover:bg-quintoandar-lightBlue",
                 "text-quintoandar-blue transition-colors duration-200"
               )}
+              aria-label="LinkedIn"
             >
               <Linkedin size={20} />
             </a>
@@ -122,6 +135,7 @@ const Header = () => {
                 "bg-white border border-gray-200 hover:bg-quintoandar-lightBlue",
                 "text-quintoandar-blue transition-colors duration-200"
               )}
+              aria-label="Twitter"
             >
               <Twitter size={20} />
             </a>
