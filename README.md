@@ -1,73 +1,80 @@
-# Welcome to your Lovable project
+# João Ventania — Product Manager & Digital Builder
 
-## Project info
+👋 Welcome to the source code of my personal website — a modern, responsive and multilingual CV built using no traditional designer or developer help. This project was created entirely through tools like [ChatGPT](https://chat.openai.com), [Cursor](https://cursor.sh), [Lovable](https://lovable.so), and automated platforms like [Vercel](https://vercel.com).
 
-**URL**: https://lovable.dev/projects/46ec8700-ad78-47f9-a7ac-02bf76651610
+> 🚀 Live site: [joaoventania.com](https://joaoventania.com)
 
-## How can I edit this code?
+---
 
-There are several ways of editing your application.
+## 📌 About This Project
 
-**Use Lovable**
+This project explores a key idea:
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/46ec8700-ad78-47f9-a7ac-02bf76651610) and start prompting.
+> **Anyone with a solid product mindset and basic development principles can build digital solutions independently.**
 
-Changes made via Lovable will be committed automatically to this repo.
+I wanted to demonstrate that:
+- It's possible to build a professional-grade personal site without writing code from scratch or designing from zero.
+- Tools like GPT, low-code platforms, and collaborative AI agents can radically reduce the friction in shipping great ideas.
+- This is just the beginning — of a new way to create.
 
-**Use your preferred IDE**
+It includes:
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+- ✅ Custom sections for About, Experience, Projects, Skills, and Contact.
+- 🌍 Language switch (PT / EN / ES).
+- 💡 Article recommendations connected to [Medium](https://medium.com/) and [Substack](https://substack.com/).
+- 📩 Functional contact form (via Resend or Formspree).
+- ⚡ Optimized performance (lazy loading, minimal JS/CSS footprint).
+- 🔍 SEO best practices & Open Graph metadata.
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+---
 
-Follow these steps:
+## 🛠️ Tech Stack
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+| Tech            | Purpose                         |
+|-----------------|----------------------------------|
+| Next.js         | App framework (React)           |
+| Tailwind CSS    | Utility-first CSS styling       |
+| Vercel          | Deployment and hosting          |
+| TypeScript      | Static typing                   |
+| Heroicons       | Iconography                     |
+| Cursor          | AI-augmented code editor        |
+| Lovable         | UI generation and layout builder |
+| Formspree / Resend | Contact form integration     |
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+---
 
-# Step 3: Install the necessary dependencies.
-npm i
+## 📁 Project Structure
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+. ├── public/ # Static assets (images, favicon) ├── components/ # UI components (Header, Footer, etc.) ├── pages/ or app/ # Next.js routing ├── styles/ # Tailwind base + custom styles ├── README.md # This file └── next.config.js # Next.js config
 
-**Edit a file directly in GitHub**
+yaml
+Copiar
+Editar
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+---
 
-**Use GitHub Codespaces**
+## 📈 Roadmap
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+- [x] Launch base layout (Next.js + Tailwind)
+- [x] Connect custom domains: joaoventania.com + joaoventania.com.br
+- [x] Build multilingual infrastructure (PT/EN/ES)
+- [ ] Add blog/article section (connected to Substack and Medium)
+- [ ] Enable dark mode
+- [ ] Add analytics and structured SEO data
+- [ ] Implement CMS or markdown posts
 
-## What technologies are used for this project?
+---
 
-This project is built with:
+## 🤝 Let’s Connect
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+- 🌐 [joaoventania.com](https://joaoventania.com)
+- 💼 [LinkedIn](https://linkedin.com/in/joaoventania)
+- ✉️ [Contact](https://joaoventania.com/#contact)
+- 📰 [Substack](https://ventania.substack.com) *(coming soon)*
+- 🧠 [Medium](https://medium.com/@joaoventania) *(coming soon)*
 
-## How can I deploy this project?
+---
 
-Simply open [Lovable](https://lovable.dev/projects/46ec8700-ad78-47f9-a7ac-02bf76651610) and click on Share -> Publish.
+## 📄 License
 
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+MIT — Feel free to fork or remix this project for your own learning.
