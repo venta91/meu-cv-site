@@ -65,9 +65,10 @@ const Header = () => {
       </nav>
 
       <div className="absolute inset-0 bg-quintoandar-lightBlue opacity-50 -z-10"></div>
+      
       <div className="container max-w-5xl mx-auto px-4">
         <div className="animate-fade-in">
-          <p className="text-quintoandar-blue font-medium mb-2">Hello, I'm</p>
+          <p className="text-quintoandar-blue font-medium mb-2">Olá, eu sou</p>
           <h1 
             className="text-4xl md:text-6xl font-bold text-quintoandar-darkGray mb-6 cursor-pointer hover:text-quintoandar-blue transition-colors"
             onClick={() => scrollToSection('about')}
@@ -81,8 +82,8 @@ const Header = () => {
             Senior Product Manager
           </h2>
           <p className="text-lg md:text-xl text-gray-600 max-w-2xl mb-10">
-            Passionate about creating impactful digital products that solve real user problems
-            with a focus on growth, strategy, and data-driven decision making.
+            Apaixonado por criar produtos digitais impactantes que resolvem problemas reais dos usuários,
+            com foco em crescimento, estratégia e decisões baseadas em dados.
           </p>
           
           <div className="flex flex-wrap gap-4">
@@ -90,7 +91,7 @@ const Header = () => {
               className="bg-quintoandar-blue hover:bg-blue-700 text-white"
               onClick={() => scrollToSection('contact')}
             >
-              Get in touch
+              Entre em contato
             </Button>
             
             <Button variant="outline" className="border-quintoandar-blue text-quintoandar-blue hover:bg-quintoandar-lightBlue">
@@ -99,7 +100,7 @@ const Header = () => {
             </Button>
           </div>
           
-          <div className="flex mt-8 space-x-4">
+          <div className="flex gap-4 mt-8">
             <a 
               href="https://linkedin.com" 
               target="_blank" 

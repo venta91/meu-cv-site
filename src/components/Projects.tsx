@@ -7,50 +7,50 @@ import { Badge } from "@/components/ui/badge";
 const projects = [
   {
     letter: "R",
-    title: "Pharmacy Price Comparison Platform Relaunch",
+    title: "Relançamento da Plataforma de Comparação de Preços de Farmácias",
     period: "2023 - 2024",
     company: "Afya (Cliquefarma)",
-    description: "Led the rebranding and relaunch of Brazil's largest pharmacy price comparison platform, including business model revision, team development, and integration with Afya ecosystem.",
+    description: "Liderou o rebranding e relançamento da maior plataforma de comparação de preços de farmácias do Brasil, incluindo revisão do modelo de negócios, desenvolvimento de equipe e integração com o ecossistema Afya.",
     results: [
-      "+50% YoY revenue growth",
-      "120K structured product pages created",
-      "77% increase in revenue per click"
+      "+50% crescimento YoY em receita",
+      "120K páginas de produtos estruturadas",
+      "77% aumento na receita por clique"
     ],
     skills: ["Rebranding", "Growth", "Product Ops", "SEO"]
   },
   {
     letter: "A",
-    title: "AI-Driven Product & Patient Journey",
-    period: "2024 - Present",
+    title: "Jornada de Produto e Paciente Orientada por IA",
+    period: "2024 - Presente",
     company: "Afya (iClinic)",
-    description: "Led the strategic transformation of product topology and integration of AI-driven solutions to optimize user and patient journeys, including financial services and operational efficiency.",
+    description: "Liderou a transformação estratégica da topologia do produto e integração de soluções orientadas por IA para otimizar as jornadas do usuário e paciente, incluindo serviços financeiros e eficiência operacional.",
     results: [
-      "AI solutions to reduce screen time",
-      "Improved financial operations for customers"
+      "Soluções de IA para reduzir tempo de tela",
+      "Operações financeiras melhoradas para clientes"
     ],
     skills: ["Product Strategy", "AI", "Fintech", "User Journey"]
   },
   {
     letter: "S",
-    title: "Value-Added Services for Autos",
+    title: "Serviços de Valor Agregado para Autos",
     period: "2020 - 2021",
     company: "OLX Brasil",
-    description: "Managed the portfolio of value-added services for autos (vehicle history, financing, insurance), impacting over 30 million users/month.",
+    description: "Gerenciou o portfólio de serviços de valor agregado para autos (histórico veicular, financiamento, seguro), impactando mais de 30 milhões de usuários/mês.",
     results: [
-      "Launched new services for autos",
-      "PR highlight: OLX Vehicles (UOL)"
+      "Lançou novos serviços para autos",
+      "Destaque PR: OLX Veículos (UOL)"
     ],
     skills: ["Autos", "Marketplace", "User Experience"]
   },
   {
     letter: "M",
-    title: "Recurring Business Account Launch",
+    title: "Lançamento de Conta Business Recorrente",
     period: "2019 - 2020",
     company: "OLX Brasil",
-    description: "Created and launched the main recurring business account, responsible for 40% of OLX revenue, and managed the Quality & Safety product marketing plan.",
+    description: "Criou e lançou a principal conta business recorrente, responsável por 40% da receita da OLX, e gerenciou o plano de marketing de produto de Qualidade & Segurança.",
     results: [
-      "Launched recurring business account",
-      "Managed Quality & Safety marketing plan"
+      "Lançou conta business recorrente",
+      "Gerenciou plano de marketing de Qualidade & Segurança"
     ],
     skills: ["Product Marketing", "Monetization", "Quality & Safety"]
   }
@@ -60,8 +60,9 @@ const Projects = () => {
   return (
     <section id="projects" className="section-spacing bg-white">
       <div className="container max-w-5xl mx-auto px-4">
-        <h2 className="section-title">Featured Projects</h2>
-        <p className="section-subtitle">A selection of impactful products and initiatives I've led</p>
+        <h2 className="section-title">Projetos em Destaque</h2>
+        <p className="section-subtitle">Uma seleção de produtos e iniciativas impactantes que liderei</p>
+        
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {projects.map((project, index) => (
             <Card key={index} className="overflow-hidden border-gray-200 card-hover">

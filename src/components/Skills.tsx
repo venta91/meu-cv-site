@@ -6,57 +6,57 @@ import { Progress } from "@/components/ui/progress";
 
 const skillCategories = [
   {
-    category: "Product Management & Strategy",
-    description: "Vision, roadmap, go-to-market, and business model definition for digital products.",
+    category: "Gestão e Estratégia de Produto",
+    description: "Visão, roadmap, go-to-market e definição de modelo de negócios para produtos digitais.",
     skills: [
-      { name: "Product Launch", level: 95 },
-      { name: "Product Strategy", level: 95 },
-      { name: "Product Culture", level: 90 },
-      { name: "OKRs & Metrics", level: 90 },
-      { name: "Innovation", level: 85 },
+      { name: "Lançamento de Produto", level: 95 },
+      { name: "Estratégia de Produto", level: 95 },
+      { name: "Cultura de Produto", level: 90 },
+      { name: "OKRs & Métricas", level: 90 },
+      { name: "Inovação", level: 85 },
     ]
   },
   {
     category: "Growth & Marketing",
-    description: "Driving user acquisition, engagement, retention, and monetization through data-driven decisions.",
+    description: "Impulsionando aquisição, engajamento, retenção e monetização através de decisões baseadas em dados.",
     skills: [
       { name: "Growth Hacking", level: 90 },
-      { name: "Marketing Strategy", level: 90 },
+      { name: "Estratégia de Marketing", level: 90 },
       { name: "SEO", level: 85 },
-      { name: "Product Marketing", level: 90 },
-      { name: "Monetization", level: 85 },
+      { name: "Marketing de Produto", level: 90 },
+      { name: "Monetização", level: 85 },
     ]
   },
   {
-    category: "Analytics & Operations",
-    description: "Using data to measure performance, identify opportunities, and optimize processes.",
+    category: "Analytics & Operações",
+    description: "Usando dados para medir performance, identificar oportunidades e otimizar processos.",
     skills: [
-      { name: "Analytical Skills", level: 95 },
-      { name: "A/B Testing", level: 90 },
-      { name: "Process Design", level: 85 },
-      { name: "User Research", level: 85 },
-      { name: "Data Visualization", level: 80 },
+      { name: "Habilidades Analíticas", level: 95 },
+      { name: "Testes A/B", level: 90 },
+      { name: "Design de Processos", level: 85 },
+      { name: "Pesquisa de Usuário", level: 85 },
+      { name: "Visualização de Dados", level: 80 },
     ]
   },
   {
-    category: "Leadership & Communication",
-    description: "Leading teams, developing talent, and fostering a culture of innovation and collaboration.",
+    category: "Liderança & Comunicação",
+    description: "Liderando times, desenvolvendo talentos e fomentando uma cultura de inovação e colaboração.",
     skills: [
-      { name: "Team Leadership", level: 90 },
-      { name: "Stakeholder Management", level: 90 },
+      { name: "Liderança de Time", level: 90 },
+      { name: "Gestão de Stakeholders", level: 90 },
       { name: "Branding & CX", level: 85 },
-      { name: "Consulting", level: 80 },
-      { name: "Content Operations", level: 80 },
+      { name: "Consultoria", level: 80 },
+      { name: "Operações de Conteúdo", level: 80 },
     ]
   },
   {
-    category: "Tech & Future Skills",
-    description: "Leveraging technology and AI to create innovative product experiences.",
+    category: "Tech & Habilidades Futuras",
+    description: "Alavancando tecnologia e IA para criar experiências de produto inovadoras.",
     skills: [
-      { name: "AI Solutions", level: 80 },
+      { name: "Soluções de IA", level: 80 },
       { name: "Fintech", level: 75 },
       { name: "E-commerce", level: 80 },
-      { name: "Digital Marketing", level: 85 },
+      { name: "Marketing Digital", level: 85 },
     ]
   }
 ];
@@ -65,8 +65,8 @@ const Skills = () => {
   return (
     <section id="skills" className="section-spacing bg-quintoandar-gray">
       <div className="container max-w-5xl mx-auto px-4">
-        <h2 className="section-title">Skills & Core Competencies</h2>
-        <p className="section-subtitle">Key areas of expertise in product, marketing, analytics, and leadership</p>
+        <h2 className="section-title">Habilidades & Competências</h2>
+        <p className="section-subtitle">Áreas-chave de expertise em produto, marketing, analytics e liderança</p>
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {skillCategories.map((category, index) => (
